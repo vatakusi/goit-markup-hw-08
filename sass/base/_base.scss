@@ -1,0 +1,93 @@
+/* UTILITIES */
+
+.page {
+  margin: 0; /*обнуляем отступы браузера по 8px*/
+  padding-top: 80px; /*высота отступа под липким меню*/
+  font-family: var(--main-font), sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  /* background-color: var(--backgraund-color); */
+  color: var(--primery-text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+a,
+.logo,
+.connect,
+.link,
+.call {
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  /* outline: 2px solid tomato; */
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-title {
+  color: var(--title-text-color);
+}
+
+img {
+  display: block;
+  min-width: 100%;
+}
+
+.backdrop.is-hidden {
+  opacity: 1;
+  visibility: hidden; /*скрыть для других браузеров*/
+  pointer-events: none; /*снимает блокировку кликов на слое, можно кликать сквозь*/
+  z-index: 1;
+} /*"is-" утилитный класс*/
+
+.current {
+  color: var(--accent-color);
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    display: flex;
+    width: 100%;
+    height: 5px;
+    padding: 1px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+  }
+}

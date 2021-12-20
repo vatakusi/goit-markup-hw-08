@@ -1,0 +1,47 @@
+/* === WHAT WE DO SECTION === */
+
+.section-title.what-we-do {
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.166;
+  letter-spacing: 0.03em;
+}
+
+.we-do li {
+  position: relative;
+  margin-right: 30px;
+  width: 370px;
+}
+
+.we-do li:last-child {
+  margin-right: 0;
+}
+
+.we-do-hover {
+  position: absolute;
+
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.wedo-hover-title {
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--second-title-color);
+}

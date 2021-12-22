@@ -31,10 +31,33 @@ a,
 }
 
 .container {
-  width: 1200px;
+  width: 100vw;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
-  padding: 0 15px;
-  /* outline: 2px solid tomato; */
+  /* width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px; */
+
+  /* @media screen and (min-width: 480px) {
+    width: 480px;
+    outline: 1px solid green;
+    background-color: blueviolet;
+  } */
+
+  @include mq(mobile) {
+    width: 480px;
+    outline: 1px solid green;
+  }
+  @include mq(tablet) {
+    width: 768px;
+    outline: 1px solid red;
+  }
+  @include mq(desktop) {
+    /* display: flex; */
+    width: 1200px;
+    outline: 1px solid blue;
+  }
 }
 
 .visually-hidden {
@@ -66,7 +89,7 @@ section {
 
 img {
   display: block;
-  min-width: 100%;
+  /* min-width: 100%; */
 }
 
 .backdrop.is-hidden {

@@ -21,8 +21,10 @@
     -50%
   ); /*4 параметра размещающие элемент по центру относитеьно родителя*/
 
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
+  /* width: 528px;
+  min-height: 581px; */
   background-color: var(--second-title-color);
 
   transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -102,6 +104,7 @@ input.modal-input {
   border-radius: 4px;
   font-size: 14px;
   outline: none;
+  cursor: pointer;
 }
 
 .modal-text-input {
@@ -148,11 +151,12 @@ input.modal-input {
 
 .check-text {
   font-weight: normal;
-  font-size: 14px;
+  font-size: 12px;
+  /* font-size: 14px; */
   line-height: 1.71;
   letter-spacing: 0.03em;
   position: relative;
-  display: flex;
+  /* display: flex; */
 }
 
 .check-text::before {
@@ -165,6 +169,7 @@ input.modal-input {
   margin-right: 5px;
   background-color: transparent;
   transition: background-color 300ms linear;
+  cursor: pointer;
 }
 
 .check-text::after {

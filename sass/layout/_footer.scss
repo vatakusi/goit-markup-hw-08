@@ -8,10 +8,22 @@
   padding-bottom: 60px;
 
   &__container {
-    display: flex;
+    display: block;
+    text-align: center;
+
+    @include mq(tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    @include mq(desktop) {
+      justify-content: space-between;
+    }
 
     &-adress {
       font-style: normal;
+      margin-bottom: 60px;
 
       &--where {
         color: var(--second-text-connect);
@@ -23,10 +35,17 @@
         align-items: center;
         width: 128px;
         margin-bottom: 9px;
+        margin-left: auto;
+        margin-right: auto;
         color: var(--second-text-connect);
         /* color: var(--primery-text-color); */
 
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        @include mq(desktop) {
+          margin-left: 0;
+          margin-right: 0;
+        }
 
         &:hover,
         &:focus {
@@ -36,15 +55,28 @@
     }
   }
 
+  &__greed1 {
+    @include mq(tablet) {
+      display: inline;
+      width: 50%;
+    }
+  }
+
   & .logo {
     width: 145px;
     margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mq(desktop) {
+      margin-left: 0;
+    }
   }
 }
 
 .foot-greed2 {
-  margin-top: 12px;
-  margin-left: 70px;
+  /* margin-top: 12px;
+  margin-left: 70px; */
 
   & h3 {
     padding-bottom: 20px;
@@ -54,72 +86,103 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--second-title-color);
+
+    @include mq(tablet) {
+      padding-top: 5px;
+    }
+
+    @include mq(desktop) {
+      text-align: left;
+    }
   }
-}
+  &__icons {
+    justify-content: center;
+    margin-bottom: 60px;
+  }
 
-.circle-frame {
-  margin-right: 10px;
-  border-radius: 50%;
+  .circle-frame {
+    margin-right: 10px;
+    border-radius: 50%;
 
-  &.foot-frame {
-    background-color: rgba(255, 255, 255, 0.1);
-    fill: var(--second-title-color);
-
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    & .slink {
+    &.foot-frame {
+      background-color: rgba(255, 255, 255, 0.1);
       fill: var(--second-title-color);
+
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      & .slink {
+        fill: var(--second-title-color);
+      }
+    }
+
+    &.foot-frame:hover,
+    &.foot-frame:focus {
+      background-color: var(--accent-color);
     }
   }
 
-  &.foot-frame:hover,
-  &.foot-frame:focus {
-    background-color: var(--accent-color);
+  div.f-form-tumb {
+    position: relative;
+    display: block;
+
+    @include mq(desktop) {
+      position: relative;
+      display: flex;
+      width: 575px;
+      height: 50px;
+      flex-direction: row;
+    }
   }
-}
 
-div.f-form-tumb {
-  position: relative;
-  display: flex;
-  width: 575px;
-  height: 50px;
-  flex-direction: row;
-}
+  .foot-form {
+    @include mq(desktop) {
+      display: flex;
+    }
+  }
 
-.foot-form {
-  display: flex;
-}
+  .foot-input {
+    max-width: 450px;
+    height: 50px;
+    margin-bottom: 20px;
 
-.foot-input {
-  position: absolute;
-  left: 0;
-  width: 358px;
-  height: 50px;
-}
+    @include mq(tablet) {
+      width: 450px;
+    }
 
-.f-input {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  color: var(--second-title-color);
-  background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  padding-left: 16px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-}
+    @include mq(desktop) {
+      position: absolute;
+      left: 0;
+      width: 358px;
+    }
+  }
 
-.foot-btn {
-  position: absolute;
-  right: 0;
-  display: flex;
-  align-items: center;
-  max-height: 50px;
-}
+  .f-input {
+    display: flex;
+    width: 100%;
+    height: 100%;
 
-.send {
-  width: 24px;
-  height: 24px;
-  padding-left: 10px;
-  fill: var(--second-title-color);
+    color: var(--second-title-color);
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding-left: 16px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+  }
+
+  .foot-btn {
+    @include mq(desktop) {
+      position: absolute;
+      right: 0;
+      display: flex;
+      align-items: center;
+      max-height: 50px;
+    }
+  }
+
+  .send {
+    width: 24px;
+    height: 24px;
+    padding-left: 10px;
+    fill: var(--second-title-color);
+  }
 }

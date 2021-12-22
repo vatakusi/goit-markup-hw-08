@@ -8,8 +8,15 @@ section.portfolio {
 }
 
 .filter {
-  display: flex;
-  justify-content: center;
+  justify-content: left;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+
+  @include mq(desktop) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 
 .filter .section-title {
@@ -18,7 +25,8 @@ section.portfolio {
 
 .filter li {
   margin-right: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
+  /* margin-bottom: 50px; */
 }
 
 .filter .button:focus,

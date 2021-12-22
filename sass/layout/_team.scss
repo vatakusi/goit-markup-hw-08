@@ -1,16 +1,41 @@
 /* === TEAM SECTION === */
 
 .section.team {
+  /* width: 100%; */
   background-color: var(--third-backgraund-color);
+  padding-bottom: 60px;
 }
 
 .team h2 {
   font-weight: bold;
+  font-size: 28px;
+  line-height: calc(33 / 28);
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
+
+  /* font-weight: bold;
   font-size: 36px;
   line-height: 1.666;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 50px; */
+}
+
+.team ul {
+  display: block;
+  text-align: center;
+
+  @include mq(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  @include mq(desktop) {
+  }
+  margin: 0;
+  text-align: center;
 }
 
 .team h3 {
@@ -39,19 +64,69 @@
 }
 
 .person {
-  height: 428px;
-  width: 270px;
+  display: inline-block;
+  max-width: 622px;
+  max-width: 450px;
   text-align: center;
 
-  margin-right: 30px;
+  margin-bottom: 30px;
+
   background-color: var(--second-title-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+
+  @include mq(mobile) {
+    height: 622px;
+    width: 450px;
+  }
+
+  @include mq(tablet-only) {
+    /* display: flex; */
+    flex-wrap: wrap;
+    height: 536px;
+    width: 354px;
+    margin: 15px;
+  }
+
+  @include mq(desktop) {
+    height: 428px;
+    width: 270px;
+
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+
+  /* height: 428px;
+  width: 270px;
+  text-align: center;
+
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+  background-color: var(--second-title-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px; */
 }
 
 .person:last-child {
   margin-right: 0;
+}
+
+.person-img {
+  /* width: 450px; */
+  width: 100%;
+
+  @include mq(tablet) {
+    width: 354px;
+    height: 374px; /* деформирует картинку, скачать новую */
+  }
+
+  @include mq(desktop) {
+    width: 270px;
+    height: auto;
+  }
 }
 
 .slink {
@@ -74,7 +149,7 @@
   fill: var(--second-title-color);
 }
 
-.uls-icon {
+.team .person .uls-icon {
   display: flex;
   justify-content: center;
   align-items: center;

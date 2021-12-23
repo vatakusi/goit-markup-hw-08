@@ -49,22 +49,19 @@ a,
 
   /* @media screen and (min-width: 480px) {
     width: 480px;
-    outline: 1px solid green;
+    
     background-color: blueviolet;
   } */
 
   @include mq(mobile) {
     width: 480px;
-    outline: 1px solid green;
   }
   @include mq(tablet) {
     width: 768px;
-    outline: 1px solid red;
   }
   @include mq(desktop) {
     /* display: flex; */
     width: 1200px;
-    outline: 1px solid blue;
   }
 }
 

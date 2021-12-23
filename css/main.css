@@ -70,7 +70,7 @@ a,
   padding: 0 15px; */
   /* @media screen and (min-width: 480px) {
     width: 480px;
-    outline: 1px solid green;
+    
     background-color: blueviolet;
   } */
 }
@@ -78,14 +78,12 @@ a,
 @media (min-width: 480px) {
   .container {
     width: 480px;
-    outline: 1px solid green;
   }
 }
 
 @media (min-width: 768px) {
   .container {
     width: 768px;
-    outline: 1px solid red;
   }
 }
 
@@ -93,7 +91,6 @@ a,
   .container {
     /* display: flex; */
     width: 1200px;
-    outline: 1px solid blue;
   }
 }
 
@@ -982,7 +979,6 @@ input.modal-input {
     display: flex;
     justify-content: space-between;
     width: 1170px;
-    outline: 3px solid tomato;
   }
 }
 
@@ -1318,7 +1314,6 @@ input.modal-input {
   justify-content: center;
   /* width: 450px; */
   margin: -15px;
-  outline: 1px solid black;
 }
 
 .clients-links {

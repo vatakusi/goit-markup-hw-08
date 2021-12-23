@@ -59,6 +59,43 @@
             >
           </li>
         </ul>
+        <button class="header-btn is-open" type="button" aria-expanded="false" aria-controls="menu__container" data-menu-button>
+          <svg class="tuggle-menu" 
+          width="20" 
+          height="20"
+          aria-label="переключатель мобильного меню">
+            <use class="icon-open" href="./images/icons.svg#menu_24px-1"></use>
+            <use class="icon-close" href="./images/icons.svg#close_24px-1" 
+            width="20" 
+            height="20"
+            aria-label="переключатель мобильного меню"></use>
+          </svg>
+        </button>
+        <div class="menu__container is-open" id="menu__container" data-menu>
+          <ul class="menu__container-list">
+
+            <li class="menu__container-list--item"><a class="menu__container-list--link curren" href="./index.html" >Студия</a></li>
+            <li class="menu__container-list--item"><a class="menu__container-list--link" href="./portfolio.html" >Портфолио</a></li>
+            <li class="menu__container-list--item"><a class="menu__container-list--link" href="" >Контакты</a></li>
+            
+          </ul>
+          <ul class="menu__container-contlist">
+            <li class="menu__container-contlist--item-call"><a href="tel:+380961111111" class="menu__container-contlist--link">+38 096 111 11 11</a></li>
+            <li class="menu__container-contlist--item-mail"><a href="mailto:info@devstudio.com" class="menu__container-contlist--link-mail">info@devstudio.com</a></li>
+          </ul>
+          <ul class="soclinks">
+            <li class="soclinks__item">
+              <a href="" class="soclinks__link">Instagram</a></li>
+            <li class="soclinks__item">
+              <a href="" class="soclinks__link">Twitter</a></li>
+            <li class="soclinks__item">
+              <a href="" class="soclinks__link">Facebook</a></li>
+            <li class="soclinks__item">
+              <a href="" class="soclinks__link">LinkedIn</a></li>
+          </ul>
+          
+          
+        </div>
       </div>
     </header>
     <main>
@@ -135,7 +172,7 @@
       </div>
     </section>
       <!--What we do-->
-      <!-- <section class="section we-do">
+      <section class="section we-do">
       <div class="container">
         <h2 class="section-title what-we-do">Чем мы занимаемся</h2>
         <ul>
@@ -159,7 +196,7 @@
           </li>
         </ul>
       </div>
-    </section> -->
+    </section>
       <!--Team-->
       <section class="section team">
       <div class="container">
@@ -522,5 +559,6 @@
         });
       })();
     </script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

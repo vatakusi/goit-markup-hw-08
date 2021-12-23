@@ -18,21 +18,21 @@
   </head>
   <body class="page">
     <!--Header-->
-    <!-- <header class="header">
+    <header class="header">
       <div class="header__container container">
         <nav class="navi">
           <a class="logo logo--header" href="./index.html"
             >Web<span class="logo__text logo__text--black">Studio</span></a
-          > -->
+          >
           <!--Menu-->
-          <!-- <ul class="navi__menu">
+          <ul class="navi__menu">
             <li class="navi__menu-item"><a class="navi__menu-link navi__menu-link" href="./index.html">Студия</a></li>
             <li class="navi__menu-item"><a href="" class="navi__menu-link navi__menu-link--сurrent">Портфолио</a></li>
             <li class="navi__menu-item"><a href="" class="navi__menu-link">Контакты</a></li>
           </ul>
-          </nav> -->
+          </nav>
           <!--Connect-->
-          <!-- <ul class="header__connect">
+          <ul class="header__connect">
             <li class="header__connect-item">
               <a class="header__connect-link" href="mailto:info@devstudio.com">
                 <svg class="header__connect-icon i-mail">
@@ -49,9 +49,46 @@
               >
             </li>
           </ul>
-        
+
+        <button class="header-btn is-open" type="button" aria-expanded="false" aria-controls="menu__container" data-menu-button>
+          <svg class="tuggle-menu" 
+          width="20" 
+          height="20"
+          aria-label="переключатель мобильного меню">
+            <use class="icon-open" href="./images/icons.svg#menu_24px-1"></use>
+            <use class="icon-close" href="./images/icons.svg#close_24px-1" 
+            width="20" 
+            height="20"
+            aria-label="переключатель мобильного меню"></use>
+          </svg>
+        </button>
+        <div class="menu__container is-open" id="menu__container" data-menu>
+          <ul class="menu__container-list">
+
+            <li class="menu__container-list--item"><a class="menu__container-list--link" href="./index.html" >Студия</a></li>
+            <li class="menu__container-list--item"><a class="menu__container-list--link curren" href="./portfolio.html" >Портфолио</a></li>
+            <li class="menu__container-list--item"><a class="menu__container-list--link" href="" >Контакты</a></li>
+            
+          </ul>
+          <ul class="menu__container-contlist">
+            <li class="menu__container-contlist--item-call"><a href="tel:+380961111111" class="menu__container-contlist--link">+38 096 111 11 11</a></li>
+            <li class="menu__container-contlist--item-mail"><a href="mailto:info@devstudio.com" class="menu__container-contlist--link-mail">info@devstudio.com</a></li>
+          </ul>
+          <ul class="soclinks">
+            <li class="soclinks__item">
+              <a href="" class="soclinks__link">Instagram</a></li>
+            <li class="soclinks__item">
+              <a href="" class="soclinks__link">Twitter</a></li>
+            <li class="soclinks__item">
+              <a href="" class="soclinks__link">Facebook</a></li>
+            <li class="soclinks__item">
+              <a href="" class="soclinks__link">LinkedIn</a></li>
+          </ul>
+          
+          
+        </div>
       </div>
-    </header> -->
+    </header>
     <main>
       <!--Portfolio-->
       <section class="portfolio">
@@ -340,5 +377,6 @@
 
       </div>
   </footer>
+  <script src="./js/menu.js"></script>
   </body>
 </html>

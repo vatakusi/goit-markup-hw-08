@@ -60,6 +60,11 @@
       display: inline;
       width: 50%;
     }
+
+    @include mq(desktop) {
+      display: inline;
+      width: auto;
+    }
   }
 
   & .logo {

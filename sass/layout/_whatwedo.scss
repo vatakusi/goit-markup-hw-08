@@ -1,5 +1,9 @@
 /* === WHAT WE DO SECTION === */
 
+.section.we-do {
+  display: none;
+}
+
 .section-title.what-we-do {
   margin-bottom: 50px;
   text-align: center;
@@ -7,6 +11,10 @@
   font-size: 36px;
   line-height: 1.166;
   letter-spacing: 0.03em;
+
+  @include mq(mobile) {
+    display: none;
+  }
 }
 
 .we-do li {

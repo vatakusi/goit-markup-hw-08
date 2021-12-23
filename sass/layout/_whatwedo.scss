@@ -13,6 +13,7 @@
 }
 
 .section-title.what-we-do {
+  display: none;
   margin-bottom: 50px;
   text-align: center;
   font-weight: bold;
@@ -20,8 +21,8 @@
   line-height: 1.166;
   letter-spacing: 0.03em;
 
-  @include mq(mobile) {
-    display: none;
+  @include mq(tablet) {
+    display: block;
   }
 }
 

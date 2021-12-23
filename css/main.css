@@ -1054,7 +1054,7 @@ input.modal-input {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 240px;
+    width: 270px;
     height: 120px;
     margin-right: 30px;
   }
@@ -1082,6 +1082,7 @@ input.modal-input {
 }
 
 .section-title.what-we-do {
+  display: none;
   margin-bottom: 50px;
   text-align: center;
   font-weight: bold;
@@ -1090,9 +1091,9 @@ input.modal-input {
   letter-spacing: 0.03em;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .section-title.what-we-do {
-    display: none;
+    display: block;
   }
 }
 
@@ -1150,6 +1151,13 @@ input.modal-input {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px; */
+}
+
+@media (min-width: 1200px) {
+  .team h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .team ul {
@@ -1306,6 +1314,13 @@ input.modal-input {
   font-size: 36px;
   line-height: 1.166;
   letter-spacing: 0.03em; */
+}
+
+@media (min-width: 1200px) {
+  .clients-title.section-title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .clients.uls-icon {

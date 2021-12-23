@@ -11,6 +11,10 @@
   line-height: calc(33 / 28);
   letter-spacing: 0.03em;
 
+  @include mq(desktop) {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
   /* margin-bottom: 50px;
   text-align: center;
   font-weight: bold;

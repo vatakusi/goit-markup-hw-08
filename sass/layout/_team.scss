@@ -14,6 +14,10 @@
   letter-spacing: 0.03em;
   margin-bottom: 30px;
 
+  @include mq(desktop) {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
   /* font-weight: bold;
   font-size: 36px;
   line-height: 1.666;

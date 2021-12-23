@@ -3,7 +3,13 @@
 .section.team {
   /* width: 100%; */
   background-color: var(--third-backgraund-color);
+  padding-top: 60px;
   padding-bottom: 60px;
+
+  @include mq(desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team h2 {
@@ -16,7 +22,7 @@
 
   @include mq(desktop) {
     font-size: 36px;
-    margin-bottom: 50px;
+    margin-bottom: 65px;
   }
   /* font-weight: bold;
   font-size: 36px;
@@ -80,10 +86,10 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-  @include mq(mobile) {
+  /* @include mq(mobile) {
     height: 622px;
     width: 450px;
-  }
+  } */
 
   @include mq(tablet-only) {
     /* display: flex; */
@@ -98,7 +104,8 @@
     width: 270px;
 
     margin-right: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 0;
+    /* margin-bottom: 30px; */
   }
 
   /* height: 428px;
@@ -116,6 +123,7 @@
 
 .person:last-child {
   margin-right: 0;
+  margin-bottom: 0;
 }
 
 .person-img {

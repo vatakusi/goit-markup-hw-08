@@ -47,6 +47,10 @@
   text-transform: uppercase;
   color: var(--title-text-color);
 
+  @include mq(tablet-only) {
+    text-align: left;
+  }
+
   @include mq(desktop) {
     text-align: left;
   }
@@ -70,6 +74,8 @@
 }
 
 .advant li:last-child {
+  margin-bottom: 0;
+
   @include mq(desktop) {
     margin-right: 0;
   }

@@ -3,6 +3,16 @@
 section.portfolio {
   padding-top: 40px;
   padding-bottom: 75px;
+
+  @include mq(tablet-only) {
+    padding-top: 60px;
+    padding-bottom: 64px;
+  }
+
+  @include mq(desktop) {
+    padding-top: 94px;
+    padding-bottom: 64px;
+  }
 }
 
 ul.gallery-boxes {

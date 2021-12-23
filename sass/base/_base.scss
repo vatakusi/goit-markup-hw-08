@@ -2,7 +2,7 @@
 
 .page {
   margin: 0; /*обнуляем отступы браузера по 8px*/
-  padding-top: 80px; /*высота отступа под липким меню*/
+  padding-top: 64px; /*высота отступа под липким меню*/
   font-family: var(--main-font), sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -11,6 +11,14 @@
   letter-spacing: 0.03em;
   /* background-color: var(--backgraund-color); */
   color: var(--primery-text-color);
+
+  @include mq(tablet) {
+    padding-top: 80px;
+  }
+
+  @include mq(desktop) {
+    padding-top: 80px;
+  }
 }
 
 h1,
